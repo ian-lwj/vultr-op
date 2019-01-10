@@ -1,3 +1,4 @@
+export LC_ALL=en_US.UTF-8
 apt install python-pip -y
 pip install setuptools
 pip install wheel
