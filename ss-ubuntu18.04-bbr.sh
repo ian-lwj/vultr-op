@@ -4,7 +4,7 @@ pip install setuptools
 pip install wheel
 pip install shadowsocks
 
-sed -i "s/EVP_CIPHER_CTX_cleanup/EVP_CIPHER_CTX_reset/" /usr/local/lib/python2.7/dist-packages/shadowsocks/crypto/openssl.py
+sed -i "s/EVP_CIPHER_CTX_cleanup/EVP_CIPHER_CTX_reset/g" /usr/local/lib/python2.7/dist-packages/shadowsocks/crypto/openssl.py
 
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
 echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
